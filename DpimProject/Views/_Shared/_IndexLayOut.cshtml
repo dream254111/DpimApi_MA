@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dpim Admin Page</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container-fluid content-dpim">
+
+        <div class="container body-content-dpim">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy;Dpim Academy Admin @DateTime.Now.Year </p>
+            </footer>
+        </div>
+
+    </div>
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
